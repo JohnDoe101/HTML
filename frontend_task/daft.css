@@ -1,0 +1,174 @@
+html,body { 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    max-height: 100%;
+    
+    color: #ffffff;
+    text-align: center;
+    font-family: "Lato";
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+
+.navbar-toggle {
+    margin: 17px 15px;
+    padding: 0 auto;
+}
+
+.sign_button {
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    border: 1px solid grey;
+    background: none;
+    margin-right: 10px;
+    font-family: "Lato";
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.sign_button:hover {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 3px rgb(196,69,69);
+    -webkit-transition: box-shadow 1s ease-in-out;
+       -moz-transition: box-shadow 1s ease-in-out;
+         -o-transition: box-shadow 1s ease-in-out;
+            transition: box-shadow 1s ease-in-out;
+}
+
+.row-content {
+    min-height: 150px;
+    position: relative;
+}
+
+.navbar {
+    height: 60px;
+    border: none;
+    background: transparent;
+}
+
+.navbar-inverse .navbar-nav > #active > a{
+    border-bottom: 3px solid rgb(196,69,69);
+    opacity: 0.9;
+    color: white;
+    font-weight: 700;
+}
+
+.navbar-inverse .navbar-nav > .open > a {
+    font-weight: 100;
+    background: #000000;
+}
+.navbar-inverse .navbar-nav > li{
+    padding: 0px 5px 0px 5px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    text-transform: uppercase;
+}
+
+
+#navbar {
+    margin-top: 10px;
+}
+
+#more,
+#more:hover,
+#more:focus {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;   
+}
+
+#nunc {
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+#lorem {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#span_bold {
+    font-weight: 300;
+    color: rgb(196,69,69);
+}
+/* lightred div*/
+#blurred {
+    margin: auto;
+    background-color: rgb(196,69,69);
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    -webkit-filter: blur(70px);
+       -moz-filter: blur(70px);
+         -o-filter: blur(70px);
+            filter: blur(70px);
+}
+
+/* animation under navbar tabs*/
+.nav-underline {
+  position: relative;
+  color: rgb(196,69,69);
+}
+.nav-underline:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: rgb(196,69,69);
+  content: "";
+  transition: width 1s;
+}
+.nav-underline:hover {
+  color: rgb(196,69,69);
+}
+.nav-underline:hover:after {
+  width: 100%;
+}
+
+/* changing background depending on device width */
+@media screen and (min-width: 768px) {
+    html,body {
+        background-image: url(img/bg_desktop.jpg);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html,body {
+        background-image: url(img/mobile_bg.jpg);
+    }
+    #nunc {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    html,body {
+        background-image: url(img/tablet_bg.jpg);
+    }
+    #nunc {
+        font-size: 40px;
+    }
+}
+
+/* auxiliarry class */
+.bodyshaper{
+    margin-top: 200px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <style>
+        
+            body {
+                font-family: sans-serif;
+                font-size: 0.9em;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+            
+            h1 {
+                text-transform: capitalize;
+            }
+            
+            fieldset {
+                background: lightyellow;
+                border: 10px solid yellow;
+                margin: 0px 0px 10px 0px;
+                width: 720px;
+            }
+
+            legend {
+                font-weight: 700;
+            }
+
+            label {
+                min-width: 180px;
+                display: inline-block;
+                text-align: right;
+                vertical-align: top;
+            }
+
+            input {
+                margin: 3px 0px 3px 0px;
+            }
+
+            .cus_inp {
+                position: relative;
+                top: -5px;
+            }
+
+            textarea {
+                width: 360px;
+                height: 50px;
+            }
+
+            .cus_range {
+                color: #ffffff;
+                padding: 5px 10px 5px 10px;
+                vertical-align: top;
+                font-weight: 575;
+                text-align: center;
+            }
+            .least {
+                background: #990066;  
+            }
+
+            .most {
+                background: #C00000;
+            }
+
+            label:hover {
+                font-size:1.5em;
+            }
+
+            input:hover {
+                font-size:1.5em;
+            }
+            
+        </style>
+    </head>    
+    
+    
+    <body>
+        
+        <div class="container">
+            <h1>please enter your details for our dating website!</h1>
+            
+            <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" medthod="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Your Face</legend>
+                    <label for="namePhoto">File to upload:</label>
+                    <input type="file" name="yourPhoto" accept="image/*" required><br>
+                    <label for="pre_view">Image preview:</label>
+                    <img src="yourPhoto" name="pre_view" id="preview" width="150px"/>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Your General Details</legend>
+                    <label for="full_name">Your Name:</label>
+                    <input type="text" name="full_name" placeholder="Enter your full name" required/><br>
+                    <label for="sex">Gender:</label>
+                    <input type="radio" name="sex" value="male" required/>Male<input type="radio" name="sex" value="female" required/>Female<br>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" required/><br>
+                    <label for="b_date">Date Of Birth:</label>
+                    <input type="date" name="b_date"/><br>
+                    <label for="fav_col">Favourite Color:</label>
+                    <input type="color" name="fav_col"/><br>
+                    <label for="country">Country:</label>
+                    <select name="country">
+                        <option value="usa">USA</option>
+                        <option value="poland">Poland</option>
+                        <option value="italy">Italy</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="russia">Russia</option>
+                    </select>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Your Indicators</legend>
+                    <label for="height">Height:</label>
+                    <span class="cus_range least">Short</span><input class="cus_inp" type="range" name="height" min="0" max="100" step="5"/><span class="most cus_range">Tall</span><br>
+                    <label for="sal">Salary:</label>
+                    <span class="cus_range least">Poor</span><input class="cus_inp" type="range" name="sal" min="0" max="100" step="5"/><span class="most cus_range">Rich</span>                 
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" required/><br>
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" name="mobile"/><br>
+                    <label for="address">Address:</label>
+                    <textarea row="4" col="250" name="address"></textarea><br>
+                    <label for="contact">Method to contact you:</label>
+                    E-Mail<input type="checkbox" value="e-Mail"/>
+                    Whatsapp<input type="checkbox" value="whatsapp"/>
+                    In-app chat<input type="checkbox" value="In-app chat"/>    
+                </fieldset>
+            </form>
+            <form>
+                <input type="submit" name="Submit">
+            </form>
+        </div>
+        
+        <!-- JS Files -->
+        <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+        
+    </body>
+    
+</html>

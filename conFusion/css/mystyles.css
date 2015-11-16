@@ -1,0 +1,82 @@
+.row-header {
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+.row-content {
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+	border-bottom: 1px ridge;
+	min-height: 400px;
+}
+
+.row-footer {
+	background-color: dimgrey;
+	margin: 0px auto;
+	padding: 20px 0px 20px 0px;
+}
+
+.jumbotron {
+	padding: 70px 30px 70px 30px;
+	margin: 0px auto;
+	background: #7986cb;
+	color: floralwhite;
+}
+
+.breadcrumb > li + li:before {
+    color: #ccc;
+    content: " > ";
+    padding: 0 5px;
+}
+
+address {
+	font-size: 80%;
+	margin: 0px;
+	color: #0f0f0f;
+}
+
+address > a,
+address > a:hover{
+    color: darkblue;
+}
+
+body { /*to jest sprytne*/   
+    float: center;
+    padding-top: 50px;
+    z-index: 0;
+}
+
+.navbar-inverse {
+    background: #303f9f;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a, 
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: #303f9f;
+    color: #eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li >a:hover {
+    color: #000000;
+}
+
+.list-unstyled > li >a, 
+.list-unstyled > li >a:hover {
+    color: darkblue;
+}
+
+
